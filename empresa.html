@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html lang="pt-Br">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário MultiStep</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&family=Titillium+Web:wght@700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <main class="main">
+
+    <section class="box-all">
+      
+      <div class="box-head">
+
+        <p class="head-text um ok">Contato</p>
+        <img src="img/arrow.svg" alt="flecha para direita">
+        <p class="head-text dois now">Empresa</p>
+        <img src="img/arrow.svg" alt="flecha para direita">
+        <p class="head-text tres">Projeto</p>
+
+      </div>
+
+      <div class="line"></div>
+
+      <form class="box-form">
+
+        <div class="input-form">
+          <label for="nome-empresa">Nome da empresa</label>
+          <input type="text" class="input-required" name="nome-empresa" id="nome-empresa" placeholder="Qual é o nome da empresa">
+          <span class="span hidden">O nome da empresa deve conter no mínimo 3 caracteres.</span>
+
+          <label for="num-colaboradores">Número de funcionários</label>
+          <input type="number" name="num-colaboradores" id="num-colaboradores" placeholder="Digite o número de colaboradores"> 
+
+          <label for="sobre-negocio">Sobre seu negócio</label>
+          <input type="text" name="sobre-negocio" id="sobre-negocio" placeholder="Fale um pouco sobre seus produtos ou serviços">
+        </div>
+
+        <div class="submit-form">
+          <input type="button" class="back-input" value="VOLTAR">
+          <input type="submit" class="input-submit" value="CONTINUAR">
+        </div> 
+
+      </form>
+
+    </section>
+
+  </main>
+  <script src="/scripts/index.js"></script>
+</body>
+
+</html>
